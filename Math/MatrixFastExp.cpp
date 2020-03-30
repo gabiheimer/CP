@@ -52,8 +52,19 @@ Matrix fExp(Matrix a, ll b){
 	
 	return *ans;
 }
-
+rix a, ll b){
+	Matrix *ans = new Matrix(line1M);
+	
+	for(int i = 0; i < baseSz; i++){
+		for(int j = 0; j < baseSz; j++){
+			ans->mat[i][j] = (i == j);
+		}
+	}
+	
+	while(b) {
+		if(b & 1
 // funcao para multiplicar a matriz resultante com a base
+// obs: pra dar certo a base tem que ficar ordenada do ultimo elemento pro primeiro
 ll multComBase(Matrix m){
 	ll resp = 0;
 	for(int j = 0; j < baseSz; j++){
